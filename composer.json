@@ -1,0 +1,31 @@
+{
+    "name": "xbxf/laravel-catpcha",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/xbxf/laravel-catpcha.git",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6",
+        "mews/captcha": "^2.2"
+    },
+    "authors": [
+        {
+            "name": "jesse",
+            "email": "4264216@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Encore\\CaptchaUser\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\CaptchaUser\\CaptchaUserServiceProvider"
+            ]
+
+        }
+    }
+}
